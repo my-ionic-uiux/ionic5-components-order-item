@@ -1,0 +1,13 @@
+<ion-item>
+  <ion-avatar slot="start">
+    <img [src]="orderItem.imageURL" />
+  </ion-avatar>
+  <ion-label>
+    <h3>{{orderItem.customerItem.name}}</h3>
+    <h2>{{orderItem.productItem.name}}</h2>
+    <p>{{orderItem.productItem.description}}</p>
+    <ion-note>{{orderItem.amount}}</ion-note>
+    <address>{{orderItem.deliveryAddress}}</address>
+    <p>{{orderItem.total}}</p>
+  </ion-label>
+</ion-item>
